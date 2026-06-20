@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرسام اپلیکیشن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>آرسام اپلیکیشن</h1>
+        <p>اپلیکیشن‌های ایرانی • ساخته شده توسط شما</p>
+    </header>
+
+    <main>
+        <div class="upload-section">
+            <h2>آپلود اپلیکیشن جدید</h2>
+            <input type="text" id="app-name" placeholder="نام اپلیکیشن" required>
+            <input type="text" id="app-desc" placeholder="توضیح کوتاه" required>
+            <input type="text" id="app-link" placeholder="لینک دانلود (Google Drive یا مستقیم)" required>
+            <button onclick="uploadApp()">آپلود اپلیکیشن</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="جستجو در اپ‌ها..." onkeyup="searchApps()">
+        </div>
+
+        <div class="apps-grid" id="apps-grid"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <a id="modal-link" href="#" target="_blank" class="download-btn">دانلود اپلیکیشن</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
