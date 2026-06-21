@@ -1,0 +1,6 @@
+{
+  "name": "Arsam Studio",
+  "description": "استودیوی نرم‌افزاری آرسام - هاب مرکزی انتشار اپلیکیشن‌های اندروید، پروژه‌های هوش مصنوعی، بازی‌ها و وبلاگ فناوری",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
